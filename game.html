@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess the Word</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h2 id="level-display"></h2>
+    <p id="hint" class="hint"></p>
+    <div id="tries-container"></div>
+    <button id="submit-btn">Submit</button>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <p id="popup-message"></p>
+    <button onclick="newGame()">New Game</button>
+  </div>
+
+  <script src="word.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WordGuess Game - Women Power</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="level-page">
+  <div class="container">
+    <h1>🌸 Women of Impact 🌸</h1>
+    <p class="tagline">Guess the iconic women through hints. You have 7 tries!</p>
+
+    <div class="level-select">
+      <button onclick="startGame('easy')">Easy</button>
+      <button onclick="startGame('medium')">Medium</button>
+      <button onclick="startGame('hard')">Hard</button>
+      <button onclick="startGame('extreme')">Extreme</button>
+    </div>
+
+    <button class="daily-btn" onclick="startDailyGame()">🌟 Word of the Day</button>
+
+    <div class="instructions">
+      <h3>How to Play</h3>
+      <ul>
+        <li>🟩 Green – Right letter, right spot</li>
+        <li>🟨 Yellow – Right letter, wrong spot</li>
+        <li>⬜ Grey – Letter not in word</li>
+        <li>⏱️ You get 7 chances. Each word is based on an iconic woman!</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function startGame(level) {
+      localStorage.setItem("level", level);
+      localStorage.setItem("daily", "false");
+      window.location.href = "game.html";
+    }
+
+    function startDailyGame() {
+      localStorage.setItem("daily", "true");
+      window.location.href = "game.html";
+    }
+  </script>
+</body>
+</html>

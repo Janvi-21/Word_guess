@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffeaf4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container, .game-container {
+  padding: 20px;
+}
+
+.level-select button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #f48fb1;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions li {
+  margin: 5px 0;
+}
+
+.hint {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d81b60;
+}
+
+#tries-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.try-row {
+  display: flex;
+  gap: 5px;
+}
+
+input.letter-box {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.letter-box.correct {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.letter-box.present {
+  background-color: #ffeb3b;
+}
+
+.letter-box.absent {
+  background-color: #e0e0e0;
+}
+
+#submit-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup.hidden {
+  display: none;
+}
